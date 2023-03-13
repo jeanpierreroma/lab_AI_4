@@ -1,0 +1,78 @@
+a:focus, a:active {outline: none;}
+a, a:visited {text-decoration: none; color: #fff;}
+a:hover {text-decoration: none;}
+
+
+table {
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #556c7d;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 2px 2px rgba(0, 0, 0, 0.08), 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 8px 8px rgba(0, 0, 0, 0.12), 0px 16px 16px rgba(0, 0, 0, 0.14);
+}
+  
+th, td {
+    padding: 16px;
+    text-align: left;
+    border: 1px solid #fff;
+}
+
+th {
+    font-weight: bold;
+    background-color: #3f5363;
+}
+/* стилі для першого рядка */
+tr:first-child {
+    background-color: #3f5363;
+}
+/* стилі для першого стовпчика */ 
+#database_diseases tr td:first-child {
+    background-color: #3f5363;
+}
+
+input[type="text"] {
+    background-color: #2b2f39;
+    color: #fff;
+    border-radius: 5px;
+
+    margin: auto 0;
+    font-size: 22px;
+}
+
+.forScroll {
+    overflow-x: auto;
+    /* white-space: nowrap; */
+}
+.disieases_Table {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+}
+.forScroll::-webkit-scrollbar {
+    width: 8px;
+    background-color: #556c7d;
+    border-radius: 10px;
+}  
+.forScroll::-webkit-scrollbar-thumb {
+    background-color: #3f5363;
+    border-radius: 10px; 
+}
+
+body::-webkit-scrollbar {
+    width: 17px; /* ширина скролу */
+}
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #556c7d; /* колір фону треку скролу */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #3f5363; /* колір скролбара */
+    border-radius: 10px; /* радіус кутів скролбара */
+}
+
+/* Приховуємо стандартний браузерний стиль обов'язкових полів */
+input:required {
+    box-shadow:none;
+}
+  input:invalid {
+    box-shadow:none;
+}
